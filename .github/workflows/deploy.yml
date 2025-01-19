@@ -44,7 +44,7 @@ jobs:
       # Copy files to EC2 instance
       - name: Copy files to EC2
         run: |
-          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -r ./ ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }}:/home/${{ secrets.EC2_USER }}/myapp
+          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -r ./ $ubuntu@63.177.94.185:/home/ubuntu/myapp
 
       # SSH into EC2 instance and deploy
       - name: Deploy to EC2
