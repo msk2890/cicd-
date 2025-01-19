@@ -12,7 +12,7 @@ def hello():
 
 @app.route('/goodbye', methods=['GET'])
 def goodbye():
-    return jsonify({'message': 'Goodbye, World!'})
+    return jsonify({'messsage': 'Goodbye, World!'})
 
 if __name__ == '__main__':
     app.run(host='localhost', port=5000)
